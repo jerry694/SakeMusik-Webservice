@@ -2,7 +2,7 @@ const config = {
     db: {
         host: "localhost",
         user: "root",
-        password: "mbel123456789JORD@N",
+        password: "root",
         database : "Chansons",
         connectTimeout: 6000
     },

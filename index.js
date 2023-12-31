@@ -16,7 +16,16 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }))
 const port = 3000
 const ChansonsRouter =  require("./routes/chansonsRouts")
 
-app.use(cors())
+
+var corsOptions = {
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: 'Content-Type,Authorization',
+    optionsSuccessStatus: 200
+  };
+
+
+app.use(cors(corsOptions));
 app.use(express.json())
 app.use(
     express.urlencoded({
@@ -38,7 +47,13 @@ app.use((err,rea,res,next) =>{
 })
 
 app.listen(port, () => {
-    console.log("belom jordan")
+    console.log("jeeeeeeeeeee")
+    console.log("jeeeeeeeeeee")
+    console.log("jeeeeeeeeeee")
+    console.log("jeeeeeeeeeee")
+    console.log("jeeeeeeeeeee")
+    console.log("jeeeeeeeeeee")
+    console.log("jeeeeeeeeeee")
     console.log(`Chansons app listening at http://localhost:${port}`)
 
 })
